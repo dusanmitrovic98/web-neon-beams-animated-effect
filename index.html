@@ -46,3 +46,4 @@
         ctx.beginPath();
         for (let x = 0; x < canvas.width; x += 10) {
           const y = this.y + Math.sin((x + this.offset) * this.frequency) * this.amplitude;
+          ctx.lineTo(x, y);
